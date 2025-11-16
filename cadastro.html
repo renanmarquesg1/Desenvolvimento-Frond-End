@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro - Amigo Felpudo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <nav>
+        <div class="logo">🐾 Amigo Felpudo</div>
+        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+
+        <ul id="navMenu">
+            <li><a href="index.html">Início</a></li>
+            <li><a href="projeto.html">Projetos</a></li>
+            <li><a href="cadastro.html" class="active">Cadastro</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="hero hero-cadastro">
+    <div class="hero-content">
+        <h1>Cadastre-se como Voluntário</h1>
+        <p>Junte-se a nós e faça a diferença na vida de animais abandonados.</p>
+    </div>
+</section>
+
+<main>
+    <section class="signup-section">
+        <h2>Formulário de Cadastro</h2>
+
+        <div id="successMessage" class="success-message">
+            ✅ Cadastro enviado com sucesso!
+        </div>
+
+        <form id="volunteerForm" onsubmit="handleSubmit(event)">
+            <fieldset>
+                <legend>Dados Pessoais</legend>
+
+                <div class="form-group">
+                    <label for="nome">Nome Completo *</label>
+                    <input type="text" id="nome" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">E-mail *</label>
+                    <input type="email" id="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="telefone">Telefone *</label>
+                    <input type="tel" id="telefone" required>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Disponibilidade</legend>
+
+                <div class="form-group">
+                    <label for="disponibilidade">Quando pode ajudar?</label>
+                    <select id="disponibilidade" required>
+                        <option value="">Selecione...</option>
+                        <option value="fins de semana">Fins de semana</option>
+                        <option value="dias úteis">Dias úteis</option>
+                        <option value="horário livre">Horário flexível</option>
+                        <option value="ações pontuais">Ações pontuais</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="area">Área de Interesse</label>
+                    <select id="area" required>
+                        <option value="">Selecione...</option>
+                        <option value="resgate">Resgate</option>
+                        <option value="eventos">Eventos / Adoção</option>
+                        <option value="cuidados">Cuidados aos Animais</option>
+                        <option value="administrativo">Administrativo</option>
+                    </select>
+                </div>
+            </fieldset>
+
+            <button type="submit" class="btn-primary">Enviar</button>
+        </form>
+
+        <section class="voluntarios-lista">
+            <h2>Voluntários Cadastrados</h2>
+            <div id="tabelaVoluntarios"></div>
+        </section>
+
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2025 ONG Amigo Felpudo. Todos os direitos reservados.</p>
+    <p>Feito com ❤️ por quem ama animais</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
