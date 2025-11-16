@@ -3,44 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projeto Web | Cruzeiro do Sul</title>
+    <title>ONG Amigo Felpudo - Início</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+    <!-- Header -->
     <header>
-        <h1>Usuário da ONG</h1>
-        <nav>   
-            <ul>
-                <li><a href="index.html" >Início</a></li>
-                <li><a href="projeto.html" >Projeto</a></li>
-                <li><a href="cadastro.html" >Cadastro</a></li>
+        <nav>
+            <div class="logo">🐾 Amigo Felpudo</div>
+            <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+
+            <ul id="navMenu">
+                <li><a href="index.html" class="active">Início</a></li>
+                <li><a href="projeto.html">Projetos</a></li>
+                <li><a href="cadastro.html">Cadastro</a></li>
             </ul>
         </nav>
-        
     </header>
-    <main>
-        <section>
-            <h2>Quem Somos</h2>
-            <p>Somos uma organização nao governamental sem fins lucrativos que atua com animais abandonados. </p>
-            <img src="imagens/cachorro.jpg" alt="Voluntários em ação">
-        </section>
 
-        <section>
-            <h2> Missão da ONG Amigo Felpudo</h2>
-            <p> Promover dignidinade e socorro a animais abandonados</p>
-            <section> 
+    <!-- Hero -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Protegendo Animais. Salvando Vidas.</h1>
+            <p>A ONG Amigo Felpudo trabalha no resgate, cuidado e adoção de animais abandonados.</p>
 
-            </section>
-            <h2>Contato com ONG Amigo Felpudo</h2>
-            <adress>
-                <p>Endereço: Rua Github 123 - Bairro Main - Penapolis/SP</p>
-                <p> Telefone: (18) 991060898</p>
-                <p> Email:contato@amigofelpudo.org.br</p>
-            </adress>
-        </section>
-    </main>
+            <div class="cta-buttons">
+                <a href="projeto.html" class="btn-secondary">Conheça os Projetos</a>
+                <a href="cadastro.html" class="btn-primary">Quero Ajudar</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quem Somos -->
+    <section class="about">
+        <h2>Quem Somos</h2>
+        <p>
+            Somos uma organização sem fins lucrativos dedicada ao bem-estar animal,
+            atuando no resgate, tratamento e adoção responsável de cães e gatos.
+        </p>
+    </section>
+
+    <!-- Contato -->
+    <section class="contact">
+        <h2>Contato</h2>
+        <address>
+            <p><strong>Endereço:</strong> Rua Github 123 – Penápolis/SP</p>
+            <p><strong>Telefone:</strong> (18) 99106-0898</p>
+            <p><strong>E-mail:</strong> contato@amigofelpudo.org.br</p>
+        </address>
+    </section>
 
     <footer>
-        <p>&copy;2025 ONG AMIGO Felpudo</p>
+        <p>&copy; 2025 ONG Amigo Felpudo. Todos os direitos reservados.</p>
+        <p>Feito com ❤️ por quem ama animais</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
